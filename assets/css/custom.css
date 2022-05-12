@@ -1,0 +1,24 @@
+img.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+img.imgcent{
+    width: 380px;
+    height: 400px;
+}
+
+
+
+.imgcrr {height: 90vh;
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .imgcrr {
+      width: 100%;
+      height: auto;
+    }
+}
