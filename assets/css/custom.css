@@ -1,7 +1,7 @@
 img.logo{
     width: 80px;
     height: 70px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 img.imgcent{
@@ -10,11 +10,11 @@ img.imgcent{
 }
 
 h3.cr1{
-    color: gray; 
+    color: #D5DBDB; 
 }
 
-p.cr2{
-    color: gray; 
+h3.cr2{
+    color: black; 
 }
 
 .imgcrr {height: 90vh;
