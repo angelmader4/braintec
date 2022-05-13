@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
 img.logo{
-    width: 70px;
+    width: 80px;
     height: 70px;
     border-radius: 50%;
 }
@@ -9,7 +10,13 @@ img.imgcent{
     height: 400px;
 }
 
+h3.cr1{
+    color: gray; 
+}
 
+p.cr2{
+    color: gray; 
+}
 
 .imgcrr {height: 90vh;
 
