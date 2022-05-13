@@ -74,30 +74,84 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="container-fluid px-4">
-                        <h1 class="mt-4">Control de Usuarios</h1>
-						<div class="row">
-                            <div class="col-xl-6 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Usuarios Activos</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Ver más</a>
-                                        <div class="small text-white"><i class="fa-solid fa-angles-right"></i></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Ordenes En Espera</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">Ver más</a>
-                                        <div class="small text-white"><i class="fa-solid fa-angles-right"></i></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </main>
+					<div class="container-fluid px-4">
+						<h1 class="mt-4">Ordenes Activas</h1>
+	
+						<div class="card mb-4">
+							<div class="card-header">
+								<i class="fas fa-table me-1"></i>
+								Nuevas Solicitudes
+							</div>
+							<div class="card-body">
+								<table id="datatablesSimple">
+									<thead>
+										<tr>
+											<th>Numero de Documento</th>
+											<th>Tipo de Doc</th>
+											<th>Nombres</th>
+											<th>Apellidos</th>
+											<th>Telefono</th>
+											<th>Direccion</th>
+											<th>Correo</th>
+											<th>Acciones</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<th>Numero de Documento</th>
+											<th>Tipo de Doc</th>
+											<th>Nombres</th>
+											<th>Apellidos</th>
+											<th>Telefono</th>
+											<th>Direccion</th>
+											<th>Correo</th>
+											<th>Acciones</th>
+										</tr>
+									</tfoot>
+									<tbody>
+										<tr>
+											<td>Tiger Nixon</td>
+											<td>System Architect</td>
+											<td>Edinburgh</td>
+											<td>61</td>
+											<td>2011/04/25</td>
+											<td>$320,800</td>
+											<td>$320,800</td>
+											<td><button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myModal">Editar</button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+	
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+	
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Nuevo Usuario</h4>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+								</div>
+	
+								<!-- Modal body -->
+								<div class="modal-body">
+									Modal body..
+								</div>
+	
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+									<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+								</div>
+	
+							</div>
+						</div>
+					</div>
+	
+	
+				</main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
@@ -113,6 +167,7 @@
             </div>
         </div>
         <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
-        <script src="../../../assets/js/scripts.js"></script>
+		<script src="../../../assets/js/simple-datatables@latest.js"></script>
+		<script src="../../../assets/js/scripts.js"></script>
     </body>
 </html>
