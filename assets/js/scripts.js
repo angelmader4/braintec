@@ -9,8 +9,14 @@ window.addEventListener('DOMContentLoaded', event => {
 	}
 
 	const datatablesSimple = document.getElementById('datatablesSimple');
-    if (datatablesSimple) {
-        new simpleDatatables.DataTable(datatablesSimple);
-    }
+	if (datatablesSimple) {
+
+		// $('#datatablesSimple').DataTable({
+		// 	language: {
+		// 		url: "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
+		// 	},
+		// });
+		new simpleDatatables.DataTable(datatablesSimple);
+	}
 
 });
